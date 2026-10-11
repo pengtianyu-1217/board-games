@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# 引擎运行日志（KataGo 会自动写 gtp_logs/）
+gtp_logs/
+engines/**/gtp_logs/
+
+# PyInstaller 打包产物
+build/
+build-*/
+dist/
+dist-*/
+*.manifest
+
+# 本地虚拟环境
+.venv/
+venv/
+env/
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
