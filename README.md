@@ -96,8 +96,11 @@ shots/                  界面截图
   **正确挡四**，用来证明坐标映射没错），最后再用控制器跑一遍完整人机流程。
 - 引擎不可用时自动回退到 `ai.py` 的占位 AI，界面不会崩。
 
-> **许可**：三个引擎本体与各自神经网络权重的许可是分开的（KataGo 网络、Pikafish
-> NNUE 另有条款），随附分发前需分别确认。
+> **许可**：逐项结论见 [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md)。要点：
+> Pikafish / Rapfi 引擎为 **GPL-3.0**，KataGo 引擎为 **MIT**；
+> 神经网络权重**与引擎本体许可不同**——`g170` 系 KataGo 权重与 Rapfi 权重为 **CC0**
+> （公共领域），而 **`pikafish.nnue` 是独立于 GPL 的专有许可，明确禁止未经许可的商用**。
+> 本项目自有代码（含美术与音频资产）采用 **MIT**。
 
 ## 美术与音频
 
@@ -122,6 +125,7 @@ shots/                  界面截图
 | [`AGENTS.md`](./AGENTS.md) | **接手先读**：架构、不可破坏的不变量、踩过的坑、下一步 |
 | [`docs/DESIGN.md`](./docs/DESIGN.md) | 分层设计、规则层契约、坐标与协议约定、界面与素材管线 |
 | [`docs/REVIEW.md`](./docs/REVIEW.md) | 代码审查：已修复问题、待办、性能、许可、测试覆盖 |
+| [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md) | **第三方许可逐项声明**：三套引擎 + 三套神经网络权重的许可、出处与义务 |
 
 ## 测试
 
